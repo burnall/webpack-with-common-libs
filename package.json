@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "gulp": "latest",
+    "gulp-util": "latest",
     "webpack": "1.13.2"
   }
 }
