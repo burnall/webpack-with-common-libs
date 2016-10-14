@@ -2,6 +2,7 @@ var gulp = require("gulp");
 var gutil = require("gulp-util");
 var webpack = require("webpack");
 var webpackConfig = require("./webpack.config.js");
+var fs = require('fs');
 
 
 // The development server (the recommended option for development)
@@ -49,6 +50,9 @@ var myDevConfig = Object.create(webpackConfig);
 var devCompiler = webpack(myDevConfig);
 
 gulp.task("webpack:build-dev", function (callback) {
+
+    console.log('File content', fs.readFileSync('app/mmm/index.js', 'utf-8'));
+
     // run webpack
     devCompiler.run(function (err, stats) {
         if (err) throw new gutil.PluginError("webpack:build-dev", err);
