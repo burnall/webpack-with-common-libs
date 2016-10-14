@@ -1,9 +1,9 @@
 {
-  "name": "webpack-with-common-libs",
+  "name": "webpack-gulp-test",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "webpack": "latest",
-    "webpack-dev-server": "latest"
+    "gulp": "latest",
+    "webpack": "1.13.2"
   }
 }

@@ -1,6 +1,6 @@
 var path = require("path");
 module.exports = {
-	cache: true,
+	//cache: true,
 	entry: {
 		mmm: "./app/mmm",
 		//nnn: "./app/nnn"
